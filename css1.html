@@ -1,0 +1,206 @@
+<!DOCTYPE html><html><head><title>Introduction to CSS</title><meta charset='utf-8'><link href='https://d31qtcb7c58z3n.cloudfront.net/res-min/themes/marxico.css' rel='stylesheet'><style></style></head>
+
+<body style = "
+  margin-left: 18%;
+  background-color: #4193bf;">
+  <div style="
+    width: 600px;
+    padding: 40px;
+    background-color: white;
+    border: dashed 3px #6abae6;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+  ">
+<div id='preview-contents' class='note-content'>
+
+
+<a href="index.html"><h4>&larr; Back to Home Page</h4></a>
+
+
+<h2 id="introduction-to-css">Introduction to CSS</h2>
+
+<div><div class="toc"><div class="toc">
+<ul>
+<li><ul>
+<li><a href="#introduction-to-css">Introduction to CSS</a><ul>
+<li><a href="#what-is-htmlcss">What is HTML/CSS?</a></li>
+<li><a href="#our-first-css-code">Our First CSS Code</a><ul>
+<li><a href="#to-do">TO-DO</a></li>
+</ul>
+</li>
+<li><a href="#linking-your-css-page-to-your-html-page">Linking your CSS page to your HTML page</a><ul>
+<li><a href="#to-do-1">TO-DO</a></li>
+</ul>
+</li>
+<li><a href="#selectors">Selectors</a></li>
+<li><a href="#next-section">Next Section</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+<h3 id="what-is-htmlcss">What is HTML/CSS?</h3>
+
+<ul><li><p><strong>HTML</strong>: describes the structure and content of a web page</p></li>
+<li><p><strong>CSS</strong>: describes the formatting and style of a web page</p></li>
+</ul>
+
+
+
+<h3 id="our-first-css-code">Our First CSS Code</h3>
+
+<ul><li><p><img longdesc="https://www.w3schools.com/css/selector.gif" alt="enter image description here" title="" type="image/gif" src="data:image/gif;base64,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" class=""></p></li>
+<li><p>CSS code comes in the format of an <strong>selector</strong> (such as <code>p</code>) followed by curly brackets <code>{ }</code>, with all the <strong>styling code</strong> (declarations) in between the brackets</p></li>
+<li><p><strong>Styling code</strong> is the code that actually determines how your content will look</p></li>
+<li><p>The <strong>styling code</strong> inside the brackets is only applied to the HTML elements that match the tag type</p></li>
+<li><p><strong>NOTE</strong>: Your <strong>styling code</strong> should separate each individual <strong>declaration</strong> with a semicolon <code>;</code></p></li>
+</ul>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="language-css hljs"><div class="hljs-line"><span class="hljs-selector-tag">h1</span>, <span class="hljs-selector-tag">h2</span>, <span class="hljs-selector-tag">h3</span>, <span class="hljs-selector-tag">h4</span>, <span class="hljs-selector-tag">h5</span>, <span class="hljs-selector-tag">h6</span> {
+</div><div class="hljs-line">    <span class="hljs-attribute">font-family</span>: sans-serif;
+</div><div class="hljs-line">    <span class="hljs-attribute">text-align</span>: center;
+</div><div class="hljs-line">}
+</div></code></pre>
+
+<ul><li><p><code>h1, h2, h3, h4, h5, h6</code>: the <strong>selector</strong>, aka what kinds of elements you are modifying (in this case, header elements)</p></li>
+<li><p><code>{</code> and <code>}</code>: encapsulates the actual <strong>styling code</strong> in between them</p></li>
+<li><p><code>font-family</code>: what kind of font your website is using</p>
+
+<ul>
+<li><p><code>font-family</code> is the property</p></li>
+<li><p><code>sans-serif</code> is the value</p></li>
+<li><p><strong>NOTE</strong>: This is a declaration, so remember to end this line with a <code>;</code></p></li></ul></li>
+<li><p><code>text-align</code>: How to justify the text on your page</p>
+
+<ul>
+<li><p><code>text-align</code> is the property</p></li>
+<li><p><code>center</code> is the value</p></li>
+<li><p><strong>NOTE</strong>: This is a declaration, so remember to end this line with a <code>;</code></p></li></ul></li>
+</ul>
+
+<blockquote>
+  <h4 id="to-do">TO-DO</h4>
+
+  <ul><li><p>Create a new file in your code editor</p></li>
+  <li><p>Copy and paste the code above into your file</p></li>
+  <li><p>Save the file into your folder as <strong>style.css</strong></p></li>
+  </ul>
+</blockquote>
+
+<ul><li><p>But wait! Why are the changes not showing up?</p></li>
+<li><p>We need to first link the HTML and CSS files together so that <strong>your website knows where to look</strong> for styling</p></li>
+</ul>
+
+
+
+<h3 id="linking-your-css-page-to-your-html-page">Linking your CSS page to your HTML page</h3>
+
+<ul><li><p>Re-open your <strong>index.html</strong> page</p></li>
+<li><p>Inside your <code>&lt;head&gt;</code> tags, directly under the <code>&lt;title&gt;</code> tags, copy and paste the following code:</p>
+
+<ul>
+<li><p><code>&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</code></p></li></ul></li>
+<li><p>Your code should look something like this:</p></li>
+</ul>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+</div><div class="hljs-line">  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Your Title Here<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/css"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"style.css"</span>&gt;</span>
+</div><div class="hljs-line">  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+</div><div class="hljs-line">  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>All your content is here~!<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</div><div class="hljs-line">  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</div></code></pre>
+
+<ul><li><p>Your CSS code is now linked to your HTML code</p></li>
+<li><p>Refresh the page! Your changes should now be visible.</p></li>
+</ul>
+
+<blockquote>
+  <h4 id="to-do-1">TO-DO</h4>
+
+  <ul><li><p>Link your <strong>style.css</strong> page to your <strong>index.html</strong> page</p></li>
+  </ul>
+</blockquote>
+
+<ul><li><p>Notice that only your <strong>header</strong> elements have been modified</p></li>
+<li><p>Other elements (eg: <code>p</code>) are not styled because your CSS code has only defined the style (or <strong>selected</strong>) the <strong>header</strong> elements</p></li>
+</ul>
+
+
+
+<h3 id="selectors">Selectors</h3>
+
+<ul><li><p>We can select a variety of elements</p></li>
+<li><p><strong>HTML Elements</strong></p>
+
+<ul>
+<li><p>Select them by directly using the name of the HTML element</p></li></ul></li>
+</ul>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="language-css hljs"><div class="hljs-line"><span class="hljs-selector-tag">p</span> {
+</div><div class="hljs-line">    <span class="hljs-attribute">color</span>: blue;
+</div><div class="hljs-line">}
+</div></code></pre>
+
+<ul><li><p><strong>Classes</strong></p>
+
+<ul>
+<li><p>Select them by putting a period <code>.</code> in front of the class name</p></li></ul></li>
+</ul>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="language-css hljs"><div class="hljs-line"><span class="hljs-selector-class">.dogs</span> {
+</div><div class="hljs-line">    <span class="hljs-attribute">text-align</span>: center;
+</div><div class="hljs-line">}
+</div></code></pre>
+
+<ul><li><p><strong>IDs</strong></p>
+
+<ul>
+<li><p>Select them by putting a period <code>#</code> in front of the element name</p></li></ul></li>
+</ul>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="language-css hljs"><div class="hljs-line"><span class="hljs-selector-id">#goldenDog</span> {
+</div><div class="hljs-line">    <span class="hljs-attribute">background-color</span>: yellow;
+</div><div class="hljs-line">}
+</div></code></pre>
+
+<ul><li><p><strong>General Selector</strong></p>
+
+<ul>
+<li><p><strong>WARNING!!</strong> Not recommended because it can cause weird formatting errors</p></li>
+<li><p>The <code>*</code> selector applies to <strong>every element</strong> on your site</p></li>
+<li><p>Most of the time, you want to use <code>body</code> instead of <code>*</code> since <code>*</code> applies to every single element</p></li></ul></li>
+</ul>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="language-css hljs"><div class="hljs-line">* {
+</div><div class="hljs-line">    <span class="hljs-attribute">color</span>: black;
+</div><div class="hljs-line">}
+</div></code></pre>
+
+
+
+<h3 id="next-section">Next Section</h3>
+
+<ul><li><p>More complex CSS!</p></li>
+</ul></div></body></html>
